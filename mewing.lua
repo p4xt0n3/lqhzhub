@@ -101,6 +101,22 @@ local Button = TabMisc:CreateButton({
    end,
 })
 
+local TabOther = Window:CreateTab("其他AUT脚本", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("以下脚本需要Key")
+local Button = TabOther:CreateButton({
+   Name = "晓组织",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/AkatsukiHub1/A-Universal-Time/refs/heads/main/README.md'))()
+   end,
+})
+local Button = TabOther:CreateButton({
+   Name = "晓组织",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/NyxaSylph/Vellure/refs/heads/main/Loader.lua"))()
+   end,
+})
+
+
 Rayfield:Notify({
    Title = "成功启用⭕💴脚本",
    Content = "用完后你会发现⭕④你⑧了",
