@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "⭕💴 Hub",
+   Name = "⭕💴 Hub（Beta测试版本）",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "⭕④你⑧了",
    LoadingSubtitle = "by 最牛逼的猎奇回战作者",
@@ -39,6 +39,16 @@ local Window = Rayfield:CreateWindow({
 
 
 local Tab = Window:CreateTab("⭕💴模式", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("把Kuro往④里⭕")
+local Toggle = Tab:CreateToggle({
+   Name = "⭕Kuro的💴（一分钟100k UC）",
+   CurrentValue = false,
+   Flag = "kurofarm", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
 
 local TabCre = Window:CreateTab("最牛逼的人", 4483362458) -- Title, Image
 local Label = TabCre:CreateLabel("猎奇回战作者P4XT0N，良心作者脚本用不收费，倒卖或者举报者全价40k，猎奇回战群384441662", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
@@ -56,6 +66,13 @@ local Button = Tab:CreateButton({
    Callback = function()
    Rayfield:Destroy()
    end,
+})
+
+Rayfield:Notify({
+   Title = "成功启用⭕💴脚本",
+   Content = "用完后你会发现⭕④你⑧了",
+   Duration = 6.5,
+   Image = 4483362458,
 })
 
 Rayfield:LoadConfiguration()
