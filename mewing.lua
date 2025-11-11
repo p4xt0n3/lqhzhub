@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "⭕④你⑧了",
    LoadingSubtitle = "by 最牛逼的猎奇回战作者",
    ShowText = "⭕💴", -- for mobile users to unhide rayfield, change if you'd like
-   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
 
@@ -102,14 +102,14 @@ local Button = TabMisc:CreateButton({
 })
 
 local TabOther = Window:CreateTab("其他AUT脚本", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("以下脚本需要Key")
+local Section = TabOther:CreateSection("以下脚本需要Key")
 local Button = TabOther:CreateButton({
    Name = "晓组织",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/AkatsukiHub1/A-Universal-Time/refs/heads/main/README.md'))()
    end,
 })
-local Section = Tab:CreateSection("以下脚本不需要Key")
+local Section = TabOther:CreateSection("以下脚本不需要Key")
 local Button = TabOther:CreateButton({
    Name = "Vellure",
    Callback = function()
