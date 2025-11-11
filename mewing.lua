@@ -41,9 +41,18 @@ local Window = Rayfield:CreateWindow({
 local Tab = Window:CreateTab("⭕💴模式", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("把Kuro往④里⭕")
 local Toggle = Tab:CreateToggle({
-   Name = "⭕Kuro的💴（100kUC/1Min）",
+   Name = "自动接拯救村庄任务（Kuro Boss）",
    CurrentValue = false,
-   Flag = "kurofarm", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Flag = "kuroquestfarm", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+local Toggle = Tab:CreateToggle({
+   Name = "开⭕Kuro",
+   CurrentValue = false,
+   Flag = "kurobossfarm", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
    -- The function that takes place when the toggle is pressed
    -- The variable (Value) is a boolean on whether the toggle is true or false
@@ -51,15 +60,23 @@ local Toggle = Tab:CreateToggle({
 })
 local Section = Tab:CreateSection("把手指容器往④里打")
 local Toggle = Tab:CreateToggle({
-   Name = "掏手指容器的手指（嗯对）",
+   Name = "自动接手指容器任务（Finger Bearer Boss）",
    CurrentValue = false,
-   Flag = "fingerfarm", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Flag = "fingerquestfarm", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
    -- The function that takes place when the toggle is pressed
    -- The variable (Value) is a boolean on whether the toggle is true or false
    end,
 })
-
+local Toggle = Tab:CreateToggle({
+   Name = "往④里掏手指",
+   CurrentValue = false,
+   Flag = "fingerbossfarm", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
 local TabCre = Window:CreateTab("最牛逼的人", 4483362458) -- Title, Image
 local Label = TabCre:CreateLabel("猎奇回战作者P4XT0N，良心作者脚本用不收费，倒卖或者举报者全价40k大头照秒出，猎奇回战群384441662", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
