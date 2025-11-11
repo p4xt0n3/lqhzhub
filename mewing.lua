@@ -39,6 +39,7 @@ local Window = Rayfield:CreateWindow({
 
 
 local Tab = Window:CreateTab("⭕💴模式", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("需要把两个选项都打开，你只开一个是不会好使的")
 local Section = Tab:CreateSection("把Kuro往④里⭕")
 local Toggle = Tab:CreateToggle({
    Name = "自动接拯救村庄任务（Kuro Boss）",
