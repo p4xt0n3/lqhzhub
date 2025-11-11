@@ -38,7 +38,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 
-local Tab = Window:CreateTab("⭕💴模式", 4483362458) -- Title, Image
+local TabQuan = Window:CreateTab("⭕💴模式", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("把Kuro往④里⭕")
 local Toggle = Tab:CreateToggle({
    Name = "⭕Kuro的💴（100kUC/1Min）",
@@ -54,14 +54,14 @@ local TabCre = Window:CreateTab("最牛逼的人", 4483362458) -- Title, Image
 local Label = TabCre:CreateLabel("猎奇回战作者P4XT0N，良心作者脚本用不收费，倒卖或者举报者全价40k大头照秒出，猎奇回战群384441662", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
 local TabMisc = Window:CreateTab("其他", 4483362458) -- Title, Image
-local Button = Tab:CreateButton({
+local Button = TabMisc:CreateButton({
    Name = "加载最牛逼脚本Infinite Yield",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()
    end,
 })
 
-local Button = Tab:CreateButton({
+local Button = TabMisc:CreateButton({
    Name = "抹除⭕💴脚本",
    Callback = function()
    Rayfield:Destroy()
