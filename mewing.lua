@@ -41,7 +41,7 @@ local Window = Rayfield:CreateWindow({
 local Tab = Window:CreateTab("⭕💴模式", 4483362458) -- Title, Image
 
 local TabCre = Window:CreateTab("最牛逼的人", 4483362458) -- Title, Image
-local Label = TabCre:CreateLabel("猎奇回战作者P4XT0N，良心作者脚本用不收费，倒卖或者举报者全价40k", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+local Label = TabCre:CreateLabel("猎奇回战作者P4XT0N，良心作者脚本用不收费，倒卖或者举报者全价40k，猎奇回战群384441662", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
 local TabMisc = Window:CreateTab("其他", 4483362458) -- Title, Image
 local Button = Tab:CreateButton({
