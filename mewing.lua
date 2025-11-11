@@ -88,7 +88,12 @@ local Button = TabMisc:CreateButton({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()
    end,
 })
-
+local Button = TabMisc:CreateButton({
+   Name = "神秘🔞换装小脚本（家人在附近慎用！！）",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/p4xt0n3/lqhzhub/refs/heads/main/sus.lua'))()
+   end,
+})
 local Button = TabMisc:CreateButton({
    Name = "抹除⭕💴脚本",
    Callback = function()
