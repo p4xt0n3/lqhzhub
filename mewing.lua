@@ -101,21 +101,6 @@ local Button = TabMisc:CreateButton({
    end,
 })
 
-local TabOth = Window:CreateTab("其他AUT脚本", 4483362458) -- Title, Image
-local Section = TabOth:CreateSection("以下脚本需要Key")
-local Button = TabOth:CreateButton({
-   Name = "晓组织",
-   Callback = function()
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/AkatsukiHub1/A-Universal-Time/refs/heads/main/README.md'))()
-   end,
-})
-local Section = TabOth:CreateSection("以下脚本不需要Key")
-local Button = TabOth:CreateButton({
-   Name = "Vellure",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/NyxaSylph/Vellure/refs/heads/main/Loader.lua"))()
-   end,
-})
 
 
 Rayfield:Notify({
