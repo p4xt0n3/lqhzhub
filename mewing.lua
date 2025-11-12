@@ -83,7 +83,7 @@ local Label = TabCre:CreateLabel("猎奇回战作者P4XT0N，良心作者脚本�
 
 local TabTP = Window:CreateTab("传送", 4483362458) -- Title, Image
 local Button = TabMisc:CreateButton({
-   Name = "加载最牛逼脚本Infinite Yield",
+   Name = "咒灵区",
    Callback = function()
    -- Server Script example: teleport player to a position
 local targetPos = Vector3.new(100, 10, -50) -- desired location
