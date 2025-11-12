@@ -81,11 +81,34 @@ local Toggle = Tab:CreateToggle({
 local TabCre = Window:CreateTab("最牛逼的人", 4483362458) -- Title, Image
 local Label = TabCre:CreateLabel("猎奇回战作者P4XT0N，良心作者脚本永不收费，倒卖或者举报者全价40k大头照秒出，猎奇回战群384441662", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
+local TabTP = Window:CreateTab("传送", 4483362458) -- Title, Image
+local Button = TabMisc:CreateButton({
+   Name = "加载最牛逼脚本Infinite Yield",
+   Callback = function()
+   -- Server Script example: teleport player to a position
+local targetPos = Vector3.new(100, 10, -50) -- desired location
+
+game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(char)
+        wait(1) -- let physics settle
+        local hrp = char:WaitForChild("HumanoidRootPart")
+        hrp.CFrame = CFrame.new(targetPos) * CFrame.Angles(0, math.rad(180), 0) -- optional rotation
+    end)
+end)
+   end,
+})
+
 local TabMisc = Window:CreateTab("其他", 4483362458) -- Title, Image
 local Button = TabMisc:CreateButton({
    Name = "加载最牛逼脚本Infinite Yield",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua'))()
+   end,
+})
+local Button = TabMisc:CreateButton({
+   Name = "加载Dex Debug工具",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
    end,
 })
 local Button = TabMisc:CreateButton({
