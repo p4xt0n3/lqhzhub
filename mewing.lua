@@ -82,7 +82,7 @@ local TabCre = Window:CreateTab("最牛逼的人", 4483362458) -- Title, Image
 local Label = TabCre:CreateLabel("猎奇回战作者P4XT0N，良心作者脚本永不收费，倒卖或者举报者全价40k大头照秒出，猎奇回战群384441662", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
 local TabTP = Window:CreateTab("传送", 4483362458) -- Title, Image
-local Button = TabMisc:CreateButton({
+local Button = TabTP:CreateButton({
    Name = "咒灵区",
    Callback = function()
    -- Server Script example: teleport player to a position
