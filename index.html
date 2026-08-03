@@ -1,25 +1,54 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>⭕💴 Hub</title>
-  <link rel="stylesheet" href="styles.css">
-  <script type="module" src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <main class="card" role="main">
-    <h1 class="site-title">⭕💴 Hub</h1>
+  <nav class="nav">
+    <a class="brand" href="#">⭕💴 <span>Hub</span></a>
+  </nav>
 
-    <div class="code-block" aria-label="可复制代码区域">
-      <pre id="snippet" class="snippet" tabindex="0">loadstring(game:HttpGet('https://raw.githubusercontent.com/p4xt0n3/lqhzhub/refs/heads/main/mewing.lua'))()</pre>
-      <div class="actions">
-        <button id="copyBtn" class="btn" aria-label="复制代码">复制</button>
-        <button id="getKeyBtn" class="btn ghost" aria-label="获取Key">获取Key</button>
-      </div>
+  <header class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <p class="eyebrow slide-in">· ⭕💴 Hub ·</p>
+    <h1 class="slide-in">选择你的<br /><span class="grad">入口</span></h1>
+    <div class="options">
+      <button class="option slide-in" id="opt-script">
+        <span class="option-icon">✦</span>
+        <span class="option-title">脚本进入</span>
+        <span class="option-tag">Beta</span>
+      </button>
+      <button class="option slide-in" id="opt-order">
+        <span class="option-icon">◉</span>
+        <span class="option-title">接稿件</span>
+      </button>
+      <button class="option slide-in" id="opt-hu">
+        <span class="option-icon">🧈</span>
+        <span class="option-title">🧈区</span>
+      </button>
     </div>
+  </header>
 
-    <p class="hint">点击"复制"即可将代码复制到剪贴板。</p>
-  </main>
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="关闭">✕</button>
+      <p class="eyebrow">· 脚本 ·</p>
+      <h2>复制脚本</h2>
+      <p class="modal-hint">点击下方文字即可复制</p>
+      <div class="code" id="code" title="点击复制">
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/p4xt0n3/lqhzhub/refs/heads/main/mewing.lua'))()
+      </div>
+      <button class="btn btn-primary" id="copy-btn">复制脚本</button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
