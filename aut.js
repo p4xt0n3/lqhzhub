@@ -13,7 +13,7 @@ const ITEMS = [
   { name: "天逆牟", img: "tnm.png", price: 1, color: "gold" },
   { name: "游云", img: "yy.png", price: 1, color: "gold" },
   { name: "释魂刀", img: "shd.png", price: 1, color: "gold" },
-  { name: "天与咒缚觉醒", img: "tyzsjx.png", price: 1, color: "gold" },
+  { name: "天与咒缚觉醒", img: "tyzfjx.png", price: 1, color: "gold" },
   { name: "诅咒手臂", img: "zzsb.png", price: 1, color: "gold" },
   { name: "御厨子物品", img: "yczwp.png", price: 1, color: "gold" },
   { name: "简易领域精华", img: "jyly.png", price: 1, color: "gold" },
