@@ -37,6 +37,9 @@ document.getElementById("opt-order").addEventListener("click", () => {
 document.getElementById("opt-hu").addEventListener("click", () => {
   window.location.href = "hy.html";
 });
+document.getElementById("opt-aut").addEventListener("click", () => {
+  window.location.href = "aut.html";
+});
 document.getElementById("modal-close").addEventListener("click", closeModal);
 modal.querySelector(".modal-backdrop").addEventListener("click", closeModal);
 document.addEventListener("keydown", (e) => {

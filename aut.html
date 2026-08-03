@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⭕💴 Hub · AUT物品售卖</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="index.html">⭕💴 <span>Hub</span></a>
+    <a class="btn btn-ghost nav-back" href="index.html">← 返回</a>
+  </nav>
+
+  <header class="hero shop-hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <p class="eyebrow slide-in">· AUT物品售卖 ·</p>
+    <h1 class="slide-in">物品<span class="grad">售卖</span></h1>
+    <p class="sub slide-in">点击卡片打勾 · 已选物品可调整数量</p>
+  </header>
+
+  <main class="shop">
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-color="all">全部</button>
+      <button class="filter-btn" data-color="pink">粉色</button>
+      <button class="filter-btn" data-color="red">红色</button>
+      <button class="filter-btn" data-color="gold">金色</button>
+    </div>
+    <div class="items" id="items"></div>
+  </main>
+
+  <aside class="cart" id="cart">
+    <div class="cart-head">
+      <span>合计</span>
+      <span>已选 <b id="cart-count">0</b> 件</span>
+    </div>
+    <div class="cart-price" id="cart-price">¥0</div>
+    <div class="cart-list" id="cart-list"></div>
+    <p class="cart-empty" id="cart-empty">还没有勾选物品</p>
+    <button class="btn btn-primary buy-btn" id="buy-btn" disabled>购买</button>
+  </aside>
+
+  <div class="modal" id="pay-modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box pay-box">
+      <button class="modal-close" id="pay-close" aria-label="关闭">✕</button>
+      <p class="eyebrow">· 订单确认 ·</p>
+      <h2>填写信息</h2>
+      <div class="pay-field">
+        <label>QQ号</label>
+        <input id="pay-qq" type="text" inputmode="numeric" placeholder="请输入 QQ 号" />
+      </div>
+      <div class="pay-field">
+        <label>QQ名称</label>
+        <input id="pay-name" type="text" placeholder="请输入 QQ 名称" />
+      </div>
+      <div class="pay-field">
+        <label>Roblox名称</label>
+        <input id="pay-ro" type="text" placeholder="请输入 Roblox 名称" />
+      </div>
+      <button class="btn btn-primary pay-confirm" id="pay-confirm">生成账单</button>
+    </div>
+  </div>
+
+  <script type="module" src="aut.js"></script>
+</body>
+</html>
